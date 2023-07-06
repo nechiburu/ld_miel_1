@@ -8,7 +8,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 import { useRouter } from 'next/router'
 import Link from "next/link";
-import { GoogleLogin } from 'react-google-login';
+// import { GoogleLogin } from 'react-google-login';
 
 
 const LoginPage = (props) => {
@@ -71,10 +71,10 @@ const LoginPage = (props) => {
         window.open(loginUrl, 'Facebook Login', 'width=600,height=400');
     };
 
-    const handleGoogleLogin = (response) => {
-        // Aquí puedes realizar acciones con la respuesta de inicio de sesión de Google
-        console.log('Respuesta de inicio de sesión con Google:', response);
-      };
+    // const handleGoogleLogin = (response) => {
+    //     // Aquí puedes realizar acciones con la respuesta de inicio de sesión de Google
+    //     console.log('Respuesta de inicio de sesión con Google:', response);
+    //   };
 
     return (
         <Grid className="loginWrapper">
@@ -132,7 +132,7 @@ const LoginPage = (props) => {
                             <Grid className="loginWithSocial">
                                 <Button className="facebook" onClick={handleFacebookLogin}><i className="fa fa-facebook"></i></Button>
                                 {/* <Button className="twitter"><i className="fa fa-twitter"></i></Button> */}
-                                <GoogleLogin
+                                {/* <GoogleLogin
                                 clientId="375814723802-nl19gsfrq1rdp9ct0ifi7nvh48r49cnp.apps.googleusercontent.com"
                                 buttonText=""
                                 onSuccess={handleGoogleLogin}
@@ -143,7 +143,7 @@ const LoginPage = (props) => {
                                     <i className="fa fa-google"></i>
                                     </Button>
                                 )}
-                                />
+                                /> */}
                             </Grid>
                             <p className="noteHelp">¿No tienes una cuenta?<Link href="/register">Crear cuenta gratis</Link>
                             </p>
