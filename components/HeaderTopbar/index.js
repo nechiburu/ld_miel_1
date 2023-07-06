@@ -1,6 +1,9 @@
 import React from 'react'
 import Link  from 'next/link'
 import { FaTiktok } from 'react-icons/fa';
+import { FaFacebookF } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
+import { FaYoutube } from 'react-icons/fa';
 
 const HeaderTopbar = () => {
     return(	
@@ -11,18 +14,18 @@ const HeaderTopbar = () => {
                     <div className="col col-lg-7 col-md-12 col-12">
                         <div className="contact-intro">
                             <ul>
-                                <li><i className="fi flaticon-email"></i>loveme@gmail.com</li>
-                                <li><i className="fi flaticon-phone-call"></i> +888 (123) 869523</li>
-                                <li><i className="fi flaticon-maps-and-flags"></i> New York – 1075 Firs Avenue</li>
+                                <li><i className="fi flaticon-email"></i>reservas@travelerocorp.com</li>
+                                <li><i className="fi flaticon-phone-call"></i><a href="https://wa.me/59169203758" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>+591 69203758</a></li>
+                                <li><i className="fi flaticon-maps-and-flags"></i>Avenida San Martin, SCZ</li>
                             </ul>
                         </div>
                     </div>
                     <div className="col col-lg-5 col-md-12 col-12">
                         <div className="contact-info">
                             <ul>
-                                <li><Link href="https://www.facebook.com/viajestravelerobo" target="_blank" rel="noopener noreferrer"><i className="fi flaticon-facebook-app-symbol"></i></Link></li>
-                                <li><Link href="https://www.instagram.com/viajestravelero/" target="_blank" rel="noopener noreferrer"><i className="fi flaticon-instagram-1"></i></Link></li>
-                                <li><Link href="https://www.youtube.com/channel/UCy-hLSNYh_squF5AZZ_B3Fw" target="_blank" rel="noopener noreferrer"><i className="fi flaticon-youtube"></i></Link></li>
+                                <li><Link href="https://www.facebook.com/viajestravelerobo" target="_blank" rel="noopener noreferrer"><FaFacebookF/></Link></li>
+                                <li><Link href="https://www.instagram.com/viajestravelero/" target="_blank" rel="noopener noreferrer"><FaInstagram/></Link></li>
+                                <li><Link href="https://www.youtube.com/channel/UCy-hLSNYh_squF5AZZ_B3Fw" target="_blank" rel="noopener noreferrer"><FaYoutube/></Link></li>
                                 <li><Link href="https://www.tiktok.com/@viajestravelero?lang=es" target="_blank" rel="noopener noreferrer"><FaTiktok /></Link></li>
                             </ul>
                         </div>

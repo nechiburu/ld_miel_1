@@ -32,19 +32,19 @@ const ForgotPassword = (props) => {
                 email: '',
             });
             validator.hideMessages();
-            toast.success('You successfully Reset!');
+            toast.success('Reiniciaste correctamente!');
             router.push('/login')
         } else {
             validator.showMessages();
-            toast.error('Empty field is not allowed!');
+            toast.error('No se permiten campos vacíos!');
         }
     };
     return (
         <Grid className="loginWrapper">
 
             <Grid className="loginForm">
-                <h2>Forgot Password</h2>
-                <p>Reset your account password</p>
+                <h2>Olvide mi Contraseña</h2>
+                <p>Reinicia la contraseña de tu cuenta</p>
                 <form onSubmit={submitForm}>
                     <Grid container spacing={3}>
                         <Grid item xs={12}>
@@ -66,15 +66,15 @@ const ForgotPassword = (props) => {
                         </Grid>
                         <Grid item xs={12}>
                             <Grid className="formFooter">
-                                <Button fullWidth className="cBtn cBtnLarge cBtnTheme" type="submit">Resend
-                                    Password</Button>
+                                <Button fullWidth className="cBtn cBtnLarge cBtnTheme" type="submit">Reenviar
+                                Contraseña</Button>
                             </Grid>
-                            <Grid className="loginWithSocial">
+                            {/* <Grid className="loginWithSocial">
                                 <Button className="facebook"><i className="fa fa-facebook"></i></Button>
                                 <Button className="twitter"><i className="fa fa-twitter"></i></Button>
                                 <Button className="linkedin"><i className="fa fa-linkedin"></i></Button>
-                            </Grid>
-                            <p className="noteHelp">Already have an account? <Link href="/login">Return to Sign In</Link>
+                            </Grid> */}
+                            <p className="noteHelp">¿Ya tienes una cuenta? <Link href="/login">Regresar al ingreso</Link>
                             </p>
                         </Grid>
                     </Grid>

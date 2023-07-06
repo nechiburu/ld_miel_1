@@ -38,30 +38,30 @@ const SignUpPage = (props) => {
                 confirm_password: '',
             });
             validator.hideMessages();
-            toast.success('Registration Complete successfully!');
+            toast.success('Registrado con exito!');
             router.push('/login')
         } else {
             validator.showMessages();
-            toast.error('Empty field is not allowed!');
+            toast.error('Campo vacío no esta permitido!');
         }
     };
     return (
         <Grid className="loginWrapper">
 
             <Grid className="loginForm">
-                <h2>Signup</h2>
-                <p>Signup your account</p>
+                <h2>Registro</h2>
+                <p>Registra tu cuenta</p>
                 <form onSubmit={submitForm}>
                     <Grid container spacing={3}>
                         <Grid item xs={12}>
                             <TextField
                                 className="inputOutline"
                                 fullWidth
-                                placeholder="Full Name"
+                                placeholder="Nombre Completo"
                                 value={value.full_name}
                                 variant="outlined"
                                 name="full_name"
-                                label="Name"
+                                label="Nombre"
                                 InputLabelProps={{
                                     shrink: true,
                                 }}
@@ -91,11 +91,11 @@ const SignUpPage = (props) => {
                             <TextField
                                 className="inputOutline"
                                 fullWidth
-                                placeholder="Password"
+                                placeholder="Contraseña"
                                 value={value.password}
                                 variant="outlined"
                                 name="password"
-                                label="Password"
+                                label="Contraseña"
                                 InputLabelProps={{
                                     shrink: true,
                                 }}
@@ -108,11 +108,11 @@ const SignUpPage = (props) => {
                             <TextField
                                 className="inputOutline"
                                 fullWidth
-                                placeholder="Confirm Password"
+                                placeholder="Confirmar Contraseña"
                                 value={value.password}
                                 variant="outlined"
                                 name="confirm_password"
-                                label="Confirm Password"
+                                label="Confirmar Contraseña"
                                 InputLabelProps={{
                                     shrink: true,
                                 }}
@@ -123,14 +123,14 @@ const SignUpPage = (props) => {
                         </Grid>
                         <Grid item xs={12}>
                             <Grid className="formFooter">
-                                <Button fullWidth className="cBtn cBtnLarge cBtnTheme" type="submit">Sign Up</Button>
+                                <Button fullWidth className="cBtn cBtnLarge cBtnTheme" type="submit">Resgistrarse</Button>
                             </Grid>
-                            <Grid className="loginWithSocial">
+                            {/* <Grid className="loginWithSocial">
                                 <Button className="facebook"><i className="fa fa-facebook"></i></Button>
                                 <Button className="twitter"><i className="fa fa-twitter"></i></Button>
                                 <Button className="linkedin"><i className="fa fa-linkedin"></i></Button>
-                            </Grid>
-                            <p className="noteHelp">Already have an account? <Link href="/login">Return to Sign In</Link>
+                            </Grid> */}
+                            <p className="noteHelp">¿Ya tienes una cuenta? <Link href="/login">Regresar al ingreso</Link>
                             </p>
                         </Grid>
                     </Grid>

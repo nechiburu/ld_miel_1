@@ -65,7 +65,7 @@ const ProjectSinglePage = (props) => {
                                 <div className="col-lg-12">
                                     <div className="portfolio-grids gallery-container clearfix">
                                         <Gallery >
-                                            {Projects.slice(0, 3).map((project, pitem) => (
+                                            {Projects.slice(6, 9).map((project, pitem) => (
                                                 <div className="grid" key={pitem}>
                                                     <div className="img-holder">
                                                         <Item
@@ -89,8 +89,8 @@ const ProjectSinglePage = (props) => {
                     </div>
                     <div className="pagi">
                         <ul>
-                            <li><Link onClick={ClickHandler} href='/project/[slug]' as={`/project/Maria-Robin`}><i className="fi flaticon-left-arrow"></i> Previous</Link></li>
-                            <li><Link onClick={ClickHandler} href='/project/[slug]' as={`/project/Rose-Harry`}>Next <i className="fi flaticon-right-arrow-1"></i></Link></li>
+                            <li><Link onClick={ClickHandler} href='/project/slug2' as={`/project/Maria-Robin`}><i className="fi flaticon-left-arrow"></i> Previous</Link></li>
+                            <li><Link onClick={ClickHandler} href='/project/slug3' as={`/project/Rose-Harry`}>Next <i className="fi flaticon-right-arrow-1"></i></Link></li>
                         </ul>
                     </div>
                 </div>

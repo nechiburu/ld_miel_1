@@ -18,7 +18,7 @@ const CheckoutPage =({cartList}) => {
     return (
         <Fragment>
             <Navbar />
-            <PageTitle pageTitle='Checkout' pagesub="Checkout" />
+            <PageTitle pageTitle='Pagar' pagesub="Pagar" />
             <CheckoutSection cartList={cartList}/>
             <Footer />
             <Scrollbar/>

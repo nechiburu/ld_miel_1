@@ -1,11 +1,7 @@
 import React from 'react'
-import Link from 'next/link'
 import SectionTitle from '../../components/SectionTitle'
 import Projects from '../../api/projects'
 
-const ClickHandler = () =>{
-    window.scrollTo(10, 0);
- }
 
 const ProjectSection = (props) => {
     return(
@@ -17,13 +13,12 @@ const ProjectSection = (props) => {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="portfolio-grids gallery-container clearfix">
-                                {Projects.map((project, pitem) => (
+                                {Projects.slice(15, 25).map((project, pitem) => (
                                     <div className="grid" key={pitem}>
                                         <div className="img-holder">
                                             <img src={project.pimg1} alt=""/>
                                             <div className="hover-content">
-                                                <h4><Link onClick={ClickHandler} href='/project/[slug]' as={`/project/${project.slug}`}>{project.title}</Link></h4>
-                                                <span>{project.location}- {project.date}</span>
+                                                <h4>{project.title}</h4>
                                             </div>
                                         </div>
                                     </div>

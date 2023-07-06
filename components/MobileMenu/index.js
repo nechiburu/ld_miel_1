@@ -136,29 +136,29 @@ const menus = [
 {
     id: 4,
         title: 'Luna de Miel',
-        link: '/portfolio-grid',
-        submenu: [
-            {
-                id: 41,
-                title: 'Portfolio Grid',
-                link: '/portfolio-grid'
-            },
-            {
-                id: 42,
-                title: 'Portfolio Masonary',
-                link: '/portfolio-masonary'
-            },
-            {
-                id: 43,
-                title: 'Portfolio Masonary S2',
-                link: '/portfolio-masonary-s2'
-            },
-            {
-                id: 44,
-                title: 'Portfolio Single',
-                link: '/project-single/1'
-            }
-        ]
+        link: '/project/Maria-Nevela',
+        // submenu: [
+        //     {
+        //         id: 41,
+        //         title: 'Portfolio Grid',
+        //         link: '/portfolio-grid'
+        //     },
+        //     {
+        //         id: 42,
+        //         title: 'Portfolio Masonary',
+        //         link: '/portfolio-masonary'
+        //     },
+        //     {
+        //         id: 43,
+        //         title: 'Portfolio Masonary S2',
+        //         link: '/portfolio-masonary-s2'
+        //     },
+        //     {
+        //         id: 44,
+        //         title: 'Portfolio Single',
+        //         link: '/project-single/1'
+        //     }
+        // ]
     },
 
     {
@@ -236,13 +236,13 @@ const menus = [
     {
         id: 88,
         title: 'Login',
-        link: '/',
+        link: '/login',
     },
 
     {
         id: 89,
         title: 'Registro',
-        link: '/',
+        link: '/register',
     }
     
     

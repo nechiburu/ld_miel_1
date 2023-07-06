@@ -14,9 +14,9 @@ const CheckWrap = (props) => {
     const [value, setValue] = useState({
         email: 'user@gmail.com',
         password: '123456',
-        card_holder: 'Jhon Doe',
-        card_number: '589622144',
-        cvv: '856226',
+        card_holder: '',
+        card_number: '',
+        cvv: '',
         expire_date: '',
         remember: false,
     });
@@ -71,7 +71,7 @@ const CheckWrap = (props) => {
                         <Grid item sm={6} xs={12}>
                             <TextField
                                 fullWidth
-                                label="Card holder Name"
+                                label="Nombre del dueño de la tarjeta"
                                 name="card_holder"
                                 value={value.card_holder}
                                 onChange={(e) => changeHandler(e)}
@@ -85,7 +85,7 @@ const CheckWrap = (props) => {
                         <Grid item sm={6} xs={12}>
                             <TextField
                                 fullWidth
-                                label="Card Number"
+                                label="Número de la tarjeta"
                                 name="card_number"
                                 value={value.card_number}
                                 onChange={(e) => changeHandler(e)}
@@ -113,7 +113,7 @@ const CheckWrap = (props) => {
                         <Grid item sm={6} xs={12}>
                             <TextField
                                 fullWidth
-                                label="Expire Date"
+                                label="Fecha de vencimiento"
                                 name="expire_date"
                                 value={value.expire_date}
                                 onChange={(e) => changeHandler(e)}

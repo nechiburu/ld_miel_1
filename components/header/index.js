@@ -69,13 +69,13 @@ class Header extends Component {
 
                       </li>
                       <li className="menu-item-has-children">
-                        <Link href="/portfolio-grid">Luna de Miel</Link>
-                        <ul className="sub-menu">
+                        <Link href="/project/Maria-Nevela">Luna de Miel</Link>
+                        {/* <ul className="sub-menu">
                           <li><Link href="/portfolio-grid">Portfolio Grid</Link></li>
                           <li><Link href="/portfolio-mashonary">Portfolio Mashonary</Link></li>
                           <li><Link href="/portfolio-mashonary-s2">Portfolio Mashonary S2</Link></li>
                           <li><Link href="/project/Maria-Nevela">Portfolio Single</Link></li>
-                        </ul>
+                        </ul> */}
                       </li>
                       <li className="menu-item-has-children">
                         <Link href="/shop">Regalar</Link>
@@ -93,10 +93,10 @@ class Header extends Component {
                   <div className="header-right">
                   <div id="navbar" className="collapse navbar-collapse navigation-holder">
                     <ul>
-                      <li><Link onClick={ClickHandler} href="/">Login</Link></li>
+                      <li><Link onClick={ClickHandler} href="/login">Login</Link></li>
                     </ul>
                     <ul>
-                      <li><Link onClick={ClickHandler} href="/">Registro</Link></li>
+                      <li><Link onClick={ClickHandler} href="/register">Registro</Link></li>
                     </ul>
                     </div>
                     
@@ -108,7 +108,7 @@ class Header extends Component {
                           <form onSubmit={SubmitHandler}>
                             <div>
                               <input type="text" className="form-control"
-                                placeholder="Search here..." />
+                                placeholder="Buscar a la pareja..." />
                               <button type="submit"><i
                                 className="fi flaticon-search"></i></button>
                             </div>
@@ -169,8 +169,8 @@ class Header extends Component {
                             Total: ${totalPrice(carts)}
                           </span>
                           <div className="mini-btn">
-                            <Link onClick={ClickHandler} href="/checkout" className="view-cart-btn s1">Checkout</Link>
-                            <Link onClick={ClickHandler} href="/cart" className="view-cart-btn">View Cart</Link>
+                            <Link onClick={ClickHandler} href="/checkout" className="view-cart-btn s1">Pagar</Link>
+                            <Link onClick={ClickHandler} href="/cart" className="view-cart-btn">Ver Carrito</Link>
                           </div>
                         </div>
                         <div className="visible-icon">

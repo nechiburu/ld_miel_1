@@ -24,7 +24,7 @@ const Hero = () => {
                 <div className="swiper-wrapper">
                     <Slider {...settings}>
                         <div className="hero-slide">
-                            <div className="slide-inner slide-bg-image" style={{ backgroundImage: `url(${'images/slider/slide-1.jpg'})` }}>
+                            <div className="slide-inner slide-bg-image" style={{ backgroundImage: `url(${'images/slider/prueba.jpg'})` }}>
                                 <div className="container-fluid">
                                     <div className="slide-content">
                                         <div className="slide-title">
@@ -43,7 +43,7 @@ const Hero = () => {
                             </div>
                         </div>
                         <div className="hero-slide">
-                            <div className="slide-inner slide-bg-image" style={{ backgroundImage: `url(${'images/slider/slide-2.jpg'})` }}>
+                            <div className="slide-inner slide-bg-image" style={{ backgroundImage: `url(${'images/slider/pareja.jpg'})` }}>
                                 <div className="container-fluid">
                                     <div className="slide-content">
                                         <div className="slide-title">

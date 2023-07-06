@@ -10,7 +10,7 @@ const GalleryPage = (props) => {
     return (
         <div>
             <Navbar/>
-            <PageTitle pageTitle={'Contact Us'} pagesub={'Contact'}/> 
+            <PageTitle pageTitle={'Contáctanos'} pagesub={'Contacto'}/> 
             <Contactpage/>
             <Footer/>
             <Scrollbar/>

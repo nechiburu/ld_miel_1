@@ -39,22 +39,22 @@ class RSVP extends Component {
             guest, error } = this.state;
 
         if (name === '') {
-            error.name = "Please enter your name";
+            error.name = "Por favor ingresa tu nombre";
         }
         if (email === '') {
-            error.email = "Please enter your email";
+            error.email = "Por favor ingresa tu correo";
         }
         if (address === '') {
-            error.address = "Please enter your address";
+            error.address = "Por favor ingresa tu dirección";
         }
         if (service === '') {
-            error.service = "Please Select your service";
+            error.service = "Por favor selecciona tu servicio";
         }
         if (guest === '') {
-            error.guest = "Please Select your Guest List";
+            error.guest = "Por favor selecciona el número de invitados";
         }
         if (meal === '') {
-            error.meal = "Select Select Your Meal";
+            error.meal = "Por favor selecciona tu cena";
         }
 
 
@@ -89,12 +89,12 @@ class RSVP extends Component {
                 <div className="container">
                     <div className="wpo-contact-section-wrapper">
                         <div className="wpo-contact-form-area">
-                            <SectionTitle topTitle={'Let’s Meet'} MainTitle={'Make an inquiry'}/>
+                            <SectionTitle topTitle={'Conozcámonos'} MainTitle={'Realiza una Consulta'}/>
                             <form onSubmit={this.subimtHandler} className="form">
                                 <div className="row">
                                     <div>
                                         <div className="form-field">
-                                            <input value={name} onChange={this.changeHandler} className="form-control" type="text" name="name" placeholder="Name"/>
+                                            <input value={name} onChange={this.changeHandler} className="form-control" type="text" name="name" placeholder="Nombre"/>
                                             <p>{error.name ? error.name : ''}</p>
                                         </div>
                                     </div>
@@ -106,13 +106,13 @@ class RSVP extends Component {
                                     </div>
                                     <div>
                                         <div className="form-field">
-                                            <input onChange={this.changeHandler} value={address} type="text" className="form-control" name="address" placeholder="address"/>
+                                            <input onChange={this.changeHandler} value={address} type="text" className="form-control" name="address" placeholder="Dirección"/>
                                             <p>{error.address ? error.address : ''}</p>
                                         </div>
                                     </div>
                                     <div>
                                         <select name="service" className="form-control" value={service} onChange={this.changeHandler}>
-                                            <option>Service</option>
+                                            <option>Servicio</option>
                                             <option>Photography</option>
                                             <option>The Rehearsal Dinner</option>
                                             <option>The Afterparty</option>
@@ -124,7 +124,7 @@ class RSVP extends Component {
                                     </div>
                                     <div>
                                         <select name="guest" className="form-control" value={guest} onChange={this.changeHandler}>
-                                            <option>Number Of Guests</option>
+                                            <option>Número de invitados</option>
                                             <option>01</option>
                                             <option>02</option>
                                             <option>03</option>
@@ -135,7 +135,7 @@ class RSVP extends Component {
                                     </div>
                                     <div>
                                         <select name="meal" className="form-control last" value={meal} onChange={this.changeHandler}>
-                                            <option>Meal Preferences</option>
+                                            <option>Cena deseada</option>
                                             <option>Chicken Soup</option>
                                             <option>Motton Kabab</option>
                                             <option>Chicken BBQ</option>
@@ -146,7 +146,7 @@ class RSVP extends Component {
                                     </div>
                                     <div className="submit-area">
                                         <div className="form-submit">
-                                            <button type="submit" className="theme-btn-s3">Send Message</button>
+                                            <button type="submit" className="theme-btn-s3">Enviar Mensaje</button>
                                         </div>
                                     </div>
                                 </div>
